@@ -1,0 +1,56 @@
+
+<main class="resume">
+
+  <header class="intro">
+    <span class="eyebrow">STUDENT PORTFOLIO / WEB DEVELOPMENT</span>
+
+    <h1>{{ fullName }}</h1>
+    <p class="subtitle">Information Technology Student</p>
+
+    <div class="contact-info">
+      <span>{{ location }}</span>
+      <span>{{ phone }}</span>
+      <a [href]="'mailto:' + email">{{ email }}</a>
+    </div>
+  </header>
+
+  <div class="about-grid">
+    <section class="content-card personal-profile">
+      <div class="section-heading">
+        <h2>PERSONAL PROFILE</h2>
+      </div>
+
+      <p>{{ profile }}</p>
+    </section>
+
+    <app-profile-card></app-profile-card>
+  </div>
+
+  <section class="content-card skills-section">
+    <div class="section-heading">
+      <h2>KEY SKILLS</h2>
+    </div>
+
+    <div class="skills-grid">
+      @for (skill of skills; track skill) {
+        <div class="skill-item">{{ skill }}</div>
+      }
+    </div>
+  </section>
+
+  <section class="content-card interaction">
+    <div class="section-heading">
+      <h2>ANGULAR INTERACTION</h2>
+    </div>
+
+    <p>{{ message }}</p>
+    <button type="button" (click)="showMessage()">
+      Click Me
+    </button>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 {{ fullName }}. Student Portfolio.</p>
+  </footer>
+
+</main>
