@@ -108,12 +108,6 @@ button:hover {
   background-color: #29476b;
 }
 
-.footer {
-  text-align: center;
-  padding: 15px;
-  font-size: 13px;
-}
-
 /* Mobile Layout */
 @media (max-width: 768px) {
   .resume {
