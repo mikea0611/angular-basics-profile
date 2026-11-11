@@ -29,6 +29,22 @@ export class App {
     'Git and GitHub'
   ];
 
+technicalProficiencies = [
+  {
+    category: 'Frontend Development',
+    technologies: 'HTML5, CSS3, JavaScript, TypeScript, Angular, Vue.js'
+  },
+  {
+    category: 'Backend Development',
+    technologies: 'Node.js, Express.js'
+  },
+  {
+    category: 'Database & Development Tools',
+    technologies: 'MongoDB, Git, GitHub'
+  }
+];
+
+
   message = 'Welcome to my profile!';
   clickCount = 0;
 

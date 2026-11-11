@@ -108,7 +108,37 @@ button:hover {
   background-color: #29476b;
 }
 
-/* Mobile Layout */
+
+/* Technical Proficiencies */
+.proficiencies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.proficiency-item {
+  background-color: #e8ded4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.proficiency-item h3 {
+  color: #0f233f;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.proficiency-item p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .proficiencies {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .resume {
     padding: 15px;

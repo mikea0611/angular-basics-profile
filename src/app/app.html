@@ -38,6 +38,23 @@
     </div>
   </section>
 
+
+<section class="content-card">
+  <div class="section-heading">
+    <h2>TECHNICAL PROFICIENCIES</h2>
+  </div>
+
+  <div class="proficiencies">
+    @for (item of technicalProficiencies; track item.category) {
+      <div class="proficiency-item">
+        <h3>{{ item.category }}</h3>
+        <p>{{ item.technologies }}</p>
+      </div>
+    }
+  </div>
+</section>
+
+
   <section class="content-card interaction">
     <div class="section-heading">
       <h2>ANGULAR INTERACTION</h2>
